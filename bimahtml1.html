@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="stylebima1.css">
+</head>
+<body>
+
+<div id="quiz-container">
+    <h2>Quiz</h2>
+    <div id="question"></div>
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="result"></p>
+    <p id="score">Skor: 0</p>
+</div>
+
+<audio id="background-music">
+    <source src="" type="mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<div id="volume-control">
+    <label for="volume">Volume:</label>
+    <input type="range" id="volume" min="0" max="1" step="0.1" value="1" oninput="changeVolume()">
+</div>
+
+<div id="playlist-control">
+    
+    <select id="playlist-select" onchange="changeMusic()">
+        <option value="8 Letters.mp3">8 Letters</option>
+        <option value="Dandelions.mp3">Dandelions</option>
+        <option value="Lana Del Rey - Summertime Sadness (Lyrics).mp3">Summertime Sadness</option>
+        <option value="Lana Del Rey - Yes To Heaven Lirik Terjemahan Indonesia.mp3">Yes To Heaven </option>
+        <option value="One Direction - Night Changes.mp3">One Direction - Night Changes</option>
+        <option value="Slipping Through My Fingers.mp3">Slipping Through My Fingers</option>
+    </select>
+</div>
+
+<div id="time-control">
+    <label for="time">Waktu Musik:</label>
+    <input type="range" id="time" min="0" max="100" step="1" value="0" oninput="changeTime()">
+</div>
+
+<script src="scriptbima1.js"></script>
+
+</body>
+</html>

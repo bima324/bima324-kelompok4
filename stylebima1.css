@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('quiz.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.question label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+
+
+
+
+
+#volume-control,
+#playlist-control,
+#time-control {
+  position: fixed;
+  color: white;
+}
+
+#volume-control {
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#playlist-control {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+#playlist-select {
+  margin: 0 10px;
+  color: black;
+}
+
+.music-button {
+  font-size: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.music-title {
+  font-size: 18px;
+  margin-right: 10px;
+  color: white;
+}
+
+#time-control {
+  top: 50px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+}
